@@ -69,7 +69,7 @@ calendarList.append(createTimestampObj('2019-10-19+12%3A00', '2019-10-19+14%3A00
 	times = timeit.repeat(setup = SETUP_CODE, 
 						stmt = TEST_CODE, 
 						repeat = 3, 
-						number = 1)
+						number = 1000)
 
 	print('Object creation & appending to a list time: {}'.format(min(times)))		 
 
@@ -90,7 +90,7 @@ calendarList.append(createTimestampDict('2019-10-19+12%3A00', '2019-10-19+14%3A0
 	times = timeit.repeat(setup = SETUP_CODE, 
 						stmt = TEST_CODE, 
 						repeat = 3, 
-						number = 1)
+						number = 1000)
 
 	print('Dictionary creation & appending to a list time: {}'.format(min(times)))
 
